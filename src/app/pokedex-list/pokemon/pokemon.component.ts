@@ -11,6 +11,7 @@ import { Pokemon } from './pokemon';
 export class PokemonComponent implements OnInit {
 
   @Input() url:string = ''
+  @Input() name:string = ''
 
   ngOnInit(): void {
   }

@@ -1,4 +1,12 @@
-<app-pokemon
-*ngFor="let pokemon of pokemons"
-[url]="pokemon.url"
-></app-pokemon>
+<div class="container">
+  <ol class="row list-unstyled">
+    <li *ngFor="let pokemon of pokemons" class="col-lg-3 col-md-4 col-ls-6">
+      <app-pokemon
+
+      [url]="pokemon.url"
+      [name]="pokemon.name"
+      ></app-pokemon>
+    </li>
+  </ol>
+</div>
+
